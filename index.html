@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-магазин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <button id="catalog-link">Каталог</button>
+        <button id="cart-link">Корзина</button>
+    </div>
+
+    <div id="catalog" class="catalog hidden">
+        <h1>Каталог товаров</h1>
+        <select id="category-filter">
+            <option value="all">Все</option>
+            <option value="electronics">Электроника</option>
+            <option value="clothing">Одежда</option>
+        </select>
+
+        <div id="products" class="products"></div>
+    </div>
+
+    <div id="cart" class="cart hidden">
+        <h1>Корзина</h1>
+        <div id="cart-items"></div>
+        <p id="total-price"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
